@@ -11,7 +11,6 @@
 //
 val U = <minechem:minechemElement:92>;
 val UraniumOre = <physicanuclearphysics:uraniumOre>;
-val bad = <minechem:tile.oreUranium>;
 
 // ================================================================================
 //#MARKER REMOVE
@@ -22,12 +21,13 @@ val bad = <minechem:tile.oreUranium>;
 // ================================================================================
 //#MARKER REMOVE SHAPED	
 recipes.removeShaped(<DefenseTech:missile:23>, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, <ore:circuitBasic>, <ore:ingotSteel>], [<ore:ingotSteel>, <minecraft:flint_and_steel>, <ore:ingotSteel>]]);
-mods.minechem.Decomposer.removeRecipe(bad);
 recipes.removeShaped(<IC2:item.reactorUraniumSimple>, [[<IC2:item.itemIngotUran>, <IC2:item.itemCellEmpty>]]);
 recipes.removeShaped(<DefenseTech:explosives:15>, [[<IC2:item.itemIngotUran>, <IC2:item.itemIngotUran>, <IC2:item.itemIngotUran>], [<IC2:item.itemIngotUran>, <DefenseTech:explosives:13>, <IC2:item.itemIngotUran>], [<IC2:item.itemIngotUran>, <IC2:item.itemIngotUran>, <IC2:item.itemIngotUran>]]);
 
 // ================================================================================
 //#MARKER ADD
+furnace.addRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+mods.thermalexpansion.Furnace.addRecipe(1350, <minecraft:rotten_flesh>, <minecraft:leather>);
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
@@ -42,3 +42,6 @@ recipes.addShaped(<DefenseTech:missile:23>, [[null, <ore:ingotSteel>, null], [<o
 mods.minechem.Decomposer.addRecipe(UraniumOre,1,[[U * 48]]); 
 recipes.addShaped(<IC2:item.reactorUraniumSimple>, [[<physicanuclearphysics:item.uranium235>, <IC2:item.itemCellEmpty>]]);
 recipes.addShaped(<DefenseTech:explosives:15>, [[<physicanuclearphysics:item.uranium235>, <physicanuclearphysics:item.uranium235>, <physicanuclearphysics:item.uranium235>], [<physicanuclearphysics:item.uranium235>, <DefenseTech:explosives:13>, <physicanuclearphysics:item.uranium235>], [<physicanuclearphysics:item.uranium235>, <physicanuclearphysics:item.uranium235>, <physicanuclearphysics:item.uranium235>]]);
+
+
+
