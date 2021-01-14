@@ -11,6 +11,8 @@
 //
 val U = <minechem:minechemElement:92>;
 val UraniumOre = <physicanuclearphysics:uraniumOre>;
+val pipestuff = <BuildCraft|Transport:pipeWaterproof>;
+val sticky = <ore:itemRawRubber>;
 
 // ================================================================================
 //#MARKER REMOVE
@@ -37,6 +39,7 @@ recipes.addShapeless(<minecraft:gold_ingot> * 9, [<ore:blockGold>]);
 
 // ================================================================================
 //#MARKER ADD SHAPED
+mods.ic2.Compressor.addRecipe(pipestuff * 8, sticky * 1);
 recipes.addShaped(<minecraft:gold_ingot>, [[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]]);
 recipes.addShaped(<minecraft:iron_block>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 recipes.addShaped(<minecraft:gold_block>, [[<minecraft:gold_ingot>, <ore:ingotGold>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [<minecraft:gold_ingot>, <ore:ingotGold>, <ore:ingotGold>]]);
