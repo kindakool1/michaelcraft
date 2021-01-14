@@ -31,11 +31,13 @@ mods.thermalexpansion.Furnace.addRecipe(1350, <minecraft:rotten_flesh>, <minecra
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<minecraft:gold_nugget> * 9, [<minecraft:gold_ingot>]);
 recipes.addShapeless(<minecraft:iron_ingot> * 9, [<minecraft:iron_block>]);
 recipes.addShapeless(<minecraft:gold_ingot> * 9, [<ore:blockGold>]);
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<minecraft:gold_ingot>, [[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]]);
 recipes.addShaped(<minecraft:iron_block>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 recipes.addShaped(<minecraft:gold_block>, [[<minecraft:gold_ingot>, <ore:ingotGold>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [<minecraft:gold_ingot>, <ore:ingotGold>, <ore:ingotGold>]]);
 recipes.addShaped(<DefenseTech:missile:23>, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, <ore:circuitBasic>, <ore:ingotSteel>], [<ore:ingotSteel>, <Forestry:refractoryFuel>, <ore:ingotSteel>]]);
